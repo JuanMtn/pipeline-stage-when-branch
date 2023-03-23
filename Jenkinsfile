@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages{
-    stage("Build Master"){
+    stage("Build Main"){
       when {
         branch 'main' 
       }
