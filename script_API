@@ -1,0 +1,7 @@
+@Grapes([
+  @Grab(group='org.jenkins-ci.main',module='jenkins-core',version='2.289.1'),
+  @Grab(group='org.jenkins-ci.plugin.workflow',module='jenkins-cps',version='2.94'
+])
+
+import jenkins.model.*
+import hudson.model.*
