@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent any;
+  def maxQueueSize=5;
+  def getQueueSize(){
+   def queue=jenkins.instance.queue
+   def items =queue.items
+    return items.size()
+  }
   stages{
     stage('Pre-check Queue'){
       steps{
